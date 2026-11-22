@@ -1,0 +1,937 @@
+{
+  "schema_version": 1,
+  "revision": 23,
+  "profile": {
+    "name": "student",
+    "user_id": "demo-student",
+    "timezone": "Europe/Moscow"
+  },
+  "plan": {
+    "breakfast": "08:30",
+    "lunch": "13:00",
+    "dinner": "19:30"
+  },
+  "events": {
+    "meal-ec5ac0d64aff4bca": {
+      "event_id": "meal-ec5ac0d64aff4bca",
+      "user_id": "demo-student",
+      "meal_date": "2026-11-21",
+      "meal_time": "08:30",
+      "meal_type": "breakfast",
+      "items": [
+        {
+          "name": "овсянка",
+          "quantity": "200 г"
+        },
+        {
+          "name": "банан",
+          "quantity": null
+        }
+      ],
+      "source_refs": [
+        "src-3aa569cd04b95f59ccca"
+      ],
+      "recorded_at": "2026-11-22T11:43:50+03:00"
+    },
+    "meal-7cc1f1c0246a4815": {
+      "event_id": "meal-7cc1f1c0246a4815",
+      "user_id": "demo-student",
+      "meal_date": "2026-11-21",
+      "meal_time": "13:00",
+      "meal_type": "lunch",
+      "items": [
+        {
+          "name": "суп",
+          "quantity": null
+        },
+        {
+          "name": "хлеб",
+          "quantity": null
+        }
+      ],
+      "source_refs": [
+        "src-b88a4e72e20f431e3811"
+      ],
+      "recorded_at": "2026-11-22T11:43:50+03:00"
+    },
+    "meal-25038fb6866746db": {
+      "event_id": "meal-25038fb6866746db",
+      "user_id": "demo-student",
+      "meal_date": "2026-11-21",
+      "meal_time": "19:00",
+      "meal_type": "dinner",
+      "items": [
+        {
+          "name": "рис",
+          "quantity": null
+        },
+        {
+          "name": "курица",
+          "quantity": null
+        }
+      ],
+      "source_refs": [
+        "src-f4590caffe89276fa9a9"
+      ],
+      "recorded_at": "2026-11-22T11:43:51+03:00"
+    },
+    "meal-002dd95a25ab4213": {
+      "event_id": "meal-002dd95a25ab4213",
+      "user_id": "demo-student",
+      "meal_date": "2026-11-22",
+      "meal_time": "08:30",
+      "meal_type": "breakfast",
+      "items": [
+        {
+          "name": "творог",
+          "quantity": "150 г"
+        },
+        {
+          "name": "яблоко",
+          "quantity": null
+        }
+      ],
+      "source_refs": [
+        "src-127539ec73b2020c7fac"
+      ],
+      "recorded_at": "2026-11-22T11:43:52+03:00"
+    },
+    "meal-b4b3c65b16a14010": {
+      "event_id": "meal-b4b3c65b16a14010",
+      "user_id": "demo-student",
+      "meal_date": "2026-11-22",
+      "meal_time": "13:00",
+      "meal_type": "lunch",
+      "items": [
+        {
+          "name": "гречку",
+          "quantity": null
+        },
+        {
+          "name": "рыбу",
+          "quantity": null
+        }
+      ],
+      "source_refs": [
+        "src-daf5c2889d164a7b24f4"
+      ],
+      "recorded_at": "2026-11-22T11:43:53+03:00"
+    },
+    "meal-1b99dcda50314b61": {
+      "event_id": "meal-1b99dcda50314b61",
+      "user_id": "demo-student",
+      "meal_date": "2026-11-22",
+      "meal_time": null,
+      "meal_type": "unknown",
+      "items": [
+        {
+          "name": "суп",
+          "quantity": null
+        }
+      ],
+      "source_refs": [
+        "src-d729c9ecea83b98659ac",
+        "src-68130203301d5c7b950c"
+      ],
+      "recorded_at": "2026-11-22T11:43:56+03:00"
+    }
+  },
+  "sources": {
+    "src-3aa569cd04b95f59ccca": {
+      "source_id": "src-3aa569cd04b95f59ccca",
+      "transport": "demo",
+      "user_id": "demo-student",
+      "chat_id": "demo-chat",
+      "message_id": "1",
+      "sent_at": "2026-11-21T08:40:00+03:00",
+      "text": "Сегодня на завтрак в 08:30 ел овсянку 200 г и банан",
+      "recorded_at": "2026-11-22T11:43:49+03:00",
+      "trace": {
+        "model": "qwen3:4b",
+        "context": {
+          "text": "Сегодня на завтрак в 08:30 ел овсянку 200 г и банан",
+          "local_sent_at": "2026-11-21T08:40:00+03:00",
+          "timezone": "Europe/Moscow",
+          "mode": "new_request",
+          "pending": null,
+          "current_plan": {
+            "breakfast": "08:30",
+            "lunch": "13:00",
+            "dinner": "19:00"
+          }
+        },
+        "action": {
+          "action": "record",
+          "day": "2026-11-21",
+          "meal_time": "08:30",
+          "meal_type": "breakfast",
+          "items": [
+            {
+              "name": "овсянка",
+              "quantity": "200 г"
+            },
+            {
+              "name": "банан",
+              "quantity": null
+            }
+          ],
+          "multiple": false,
+          "question": null
+        },
+        "eval_count": 108,
+        "total_duration_ns": 739807900
+      }
+    },
+    "src-b88a4e72e20f431e3811": {
+      "source_id": "src-b88a4e72e20f431e3811",
+      "transport": "demo",
+      "user_id": "demo-student",
+      "chat_id": "demo-chat",
+      "message_id": "2",
+      "sent_at": "2026-11-21T13:20:00+03:00",
+      "text": "Сегодня на обед в 13:00 ел суп и хлеб",
+      "recorded_at": "2026-11-22T11:43:50+03:00",
+      "trace": {
+        "model": "qwen3:4b",
+        "context": {
+          "text": "Сегодня на обед в 13:00 ел суп и хлеб",
+          "local_sent_at": "2026-11-21T13:20:00+03:00",
+          "timezone": "Europe/Moscow",
+          "mode": "new_request",
+          "pending": null,
+          "current_plan": {
+            "breakfast": "08:30",
+            "lunch": "13:00",
+            "dinner": "19:00"
+          }
+        },
+        "action": {
+          "action": "record",
+          "day": "2026-11-21",
+          "meal_time": "13:00",
+          "meal_type": "lunch",
+          "items": [
+            {
+              "name": "суп",
+              "quantity": null
+            },
+            {
+              "name": "хлеб",
+              "quantity": null
+            }
+          ],
+          "multiple": true,
+          "question": null
+        },
+        "eval_count": 103,
+        "total_duration_ns": 713474600
+      }
+    },
+    "src-f4590caffe89276fa9a9": {
+      "source_id": "src-f4590caffe89276fa9a9",
+      "transport": "demo",
+      "user_id": "demo-student",
+      "chat_id": "demo-chat",
+      "message_id": "3",
+      "sent_at": "2026-11-21T19:10:00+03:00",
+      "text": "Сегодня на ужин в 19:00 ел рис и курицу",
+      "recorded_at": "2026-11-22T11:43:50+03:00",
+      "trace": {
+        "model": "qwen3:4b",
+        "context": {
+          "text": "Сегодня на ужин в 19:00 ел рис и курицу",
+          "local_sent_at": "2026-11-21T19:10:00+03:00",
+          "timezone": "Europe/Moscow",
+          "mode": "new_request",
+          "pending": null,
+          "current_plan": {
+            "breakfast": "08:30",
+            "lunch": "13:00",
+            "dinner": "19:00"
+          }
+        },
+        "action": {
+          "action": "record",
+          "day": "2026-11-21",
+          "meal_time": "19:00",
+          "meal_type": "dinner",
+          "items": [
+            {
+              "name": "рис",
+              "quantity": null
+            },
+            {
+              "name": "курица",
+              "quantity": null
+            }
+          ],
+          "multiple": false,
+          "question": null
+        },
+        "eval_count": 102,
+        "total_duration_ns": 668790900
+      }
+    },
+    "src-127539ec73b2020c7fac": {
+      "source_id": "src-127539ec73b2020c7fac",
+      "transport": "demo",
+      "user_id": "demo-student",
+      "chat_id": "demo-chat",
+      "message_id": "4",
+      "sent_at": "2026-11-22T08:45:00+03:00",
+      "text": "Сегодня на завтрак в 08:30 ел творог 150 г и яблоко",
+      "recorded_at": "2026-11-22T11:43:51+03:00",
+      "trace": {
+        "model": "qwen3:4b",
+        "context": {
+          "text": "Сегодня на завтрак в 08:30 ел творог 150 г и яблоко",
+          "local_sent_at": "2026-11-22T08:45:00+03:00",
+          "timezone": "Europe/Moscow",
+          "mode": "new_request",
+          "pending": null,
+          "current_plan": {
+            "breakfast": "08:30",
+            "lunch": "13:00",
+            "dinner": "19:00"
+          }
+        },
+        "action": {
+          "action": "record",
+          "day": "2026-11-22",
+          "meal_time": "08:30",
+          "meal_type": "breakfast",
+          "items": [
+            {
+              "name": "творог",
+              "quantity": "150 г"
+            },
+            {
+              "name": "яблоко",
+              "quantity": null
+            }
+          ],
+          "multiple": false,
+          "question": null
+        },
+        "eval_count": 107,
+        "total_duration_ns": 707973100
+      }
+    },
+    "src-daf5c2889d164a7b24f4": {
+      "source_id": "src-daf5c2889d164a7b24f4",
+      "transport": "demo",
+      "user_id": "demo-student",
+      "chat_id": "demo-chat",
+      "message_id": "5",
+      "sent_at": "2026-11-22T13:10:00+03:00",
+      "text": "Сегодня на обед в 13:00 ел гречку и рыбу",
+      "recorded_at": "2026-11-22T11:43:52+03:00",
+      "trace": {
+        "model": "qwen3:4b",
+        "context": {
+          "text": "Сегодня на обед в 13:00 ел гречку и рыбу",
+          "local_sent_at": "2026-11-22T13:10:00+03:00",
+          "timezone": "Europe/Moscow",
+          "mode": "new_request",
+          "pending": null,
+          "current_plan": {
+            "breakfast": "08:30",
+            "lunch": "13:00",
+            "dinner": "19:00"
+          }
+        },
+        "action": {
+          "action": "record",
+          "day": "2026-11-22",
+          "meal_time": "13:00",
+          "meal_type": "lunch",
+          "items": [
+            {
+              "name": "гречку",
+              "quantity": null
+            },
+            {
+              "name": "рыбу",
+              "quantity": null
+            }
+          ],
+          "multiple": true,
+          "question": null
+        },
+        "eval_count": 103,
+        "total_duration_ns": 686878900
+      }
+    },
+    "src-6c04710cf6e2298b0542": {
+      "source_id": "src-6c04710cf6e2298b0542",
+      "transport": "demo",
+      "user_id": "demo-student",
+      "chat_id": "demo-chat",
+      "message_id": "6",
+      "sent_at": "2026-11-22T13:12:00+03:00",
+      "text": "Что я сегодня ел?",
+      "recorded_at": "2026-11-22T11:43:53+03:00",
+      "trace": {
+        "model": "qwen3:4b",
+        "context": {
+          "text": "Что я сегодня ел?",
+          "local_sent_at": "2026-11-22T13:12:00+03:00",
+          "timezone": "Europe/Moscow",
+          "mode": "new_request",
+          "pending": null,
+          "current_plan": {
+            "breakfast": "08:30",
+            "lunch": "13:00",
+            "dinner": "19:00"
+          }
+        },
+        "action": {
+          "action": "diary",
+          "day": "today",
+          "meal_time": null,
+          "meal_type": "unknown",
+          "items": [],
+          "multiple": false,
+          "question": "Что я сегодня ел?"
+        },
+        "eval_count": 56,
+        "total_duration_ns": 408208900
+      }
+    },
+    "src-8454a3c136830bf77696": {
+      "source_id": "src-8454a3c136830bf77696",
+      "transport": "demo",
+      "user_id": "demo-student",
+      "chat_id": "demo-chat",
+      "message_id": "7",
+      "sent_at": "2026-11-22T13:13:00+03:00",
+      "text": "Что я ел вчера?",
+      "recorded_at": "2026-11-22T11:43:53+03:00",
+      "trace": {
+        "model": "qwen3:4b",
+        "context": {
+          "text": "Что я ел вчера?",
+          "local_sent_at": "2026-11-22T13:13:00+03:00",
+          "timezone": "Europe/Moscow",
+          "mode": "new_request",
+          "pending": null,
+          "current_plan": {
+            "breakfast": "08:30",
+            "lunch": "13:00",
+            "dinner": "19:00"
+          }
+        },
+        "action": {
+          "action": "diary",
+          "day": "2026-11-21",
+          "meal_time": null,
+          "meal_type": "unknown",
+          "items": [],
+          "multiple": false,
+          "question": "Что я ел вчера?"
+        },
+        "eval_count": 67,
+        "total_duration_ns": 476791800
+      }
+    },
+    "src-1eeaec6a8aa257dbeee7": {
+      "source_id": "src-1eeaec6a8aa257dbeee7",
+      "transport": "demo",
+      "user_id": "demo-student",
+      "chat_id": "demo-chat",
+      "message_id": "8",
+      "sent_at": "2026-11-22T13:14:00+03:00",
+      "text": "Какой у меня график?",
+      "recorded_at": "2026-11-22T11:43:54+03:00",
+      "trace": {
+        "model": "qwen3:4b",
+        "context": {
+          "text": "Какой у меня график?",
+          "local_sent_at": "2026-11-22T13:14:00+03:00",
+          "timezone": "Europe/Moscow",
+          "mode": "new_request",
+          "pending": null,
+          "current_plan": {
+            "breakfast": "08:30",
+            "lunch": "13:00",
+            "dinner": "19:00"
+          }
+        },
+        "action": {
+          "action": "plan",
+          "day": null,
+          "meal_time": null,
+          "meal_type": "unknown",
+          "items": [],
+          "multiple": false,
+          "question": "Какой у меня график?"
+        },
+        "eval_count": 53,
+        "total_duration_ns": 403861900
+      }
+    },
+    "src-e3ddd915e7cb9fa1220c": {
+      "source_id": "src-e3ddd915e7cb9fa1220c",
+      "transport": "demo",
+      "user_id": "demo-student",
+      "chat_id": "demo-chat",
+      "message_id": "9",
+      "sent_at": "2026-11-22T13:15:00+03:00",
+      "text": "Перенеси ужин на 19:30",
+      "recorded_at": "2026-11-22T11:43:54+03:00",
+      "trace": {
+        "model": "qwen3:4b",
+        "context": {
+          "text": "Перенеси ужин на 19:30",
+          "local_sent_at": "2026-11-22T13:15:00+03:00",
+          "timezone": "Europe/Moscow",
+          "mode": "new_request",
+          "pending": null,
+          "current_plan": {
+            "breakfast": "08:30",
+            "lunch": "13:00",
+            "dinner": "19:00"
+          }
+        },
+        "action": {
+          "action": "propose",
+          "day": null,
+          "meal_time": "19:30",
+          "meal_type": "dinner",
+          "items": [],
+          "multiple": false,
+          "question": null
+        },
+        "eval_count": 55,
+        "total_duration_ns": 409290000
+      }
+    },
+    "src-313d48142ed1a4455517": {
+      "source_id": "src-313d48142ed1a4455517",
+      "transport": "demo",
+      "user_id": "demo-student",
+      "chat_id": "demo-chat",
+      "message_id": "10",
+      "sent_at": "2026-11-22T13:16:00+03:00",
+      "text": "/plan",
+      "recorded_at": "2026-11-22T11:43:54+03:00"
+    },
+    "src-072f9f40af4631e6290b": {
+      "source_id": "src-072f9f40af4631e6290b",
+      "transport": "demo",
+      "user_id": "demo-student",
+      "chat_id": "demo-chat",
+      "message_id": "11",
+      "sent_at": "2026-11-22T13:17:00+03:00",
+      "text": "/confirm a178275c8ead",
+      "recorded_at": "2026-11-22T11:43:55+03:00"
+    },
+    "src-8c6d7de3d9dd3935a2dd": {
+      "source_id": "src-8c6d7de3d9dd3935a2dd",
+      "transport": "demo",
+      "user_id": "demo-student",
+      "chat_id": "demo-chat",
+      "message_id": "12",
+      "sent_at": "2026-11-22T13:18:00+03:00",
+      "text": "/confirm a178275c8ead",
+      "recorded_at": "2026-11-22T11:43:55+03:00"
+    },
+    "src-d729c9ecea83b98659ac": {
+      "source_id": "src-d729c9ecea83b98659ac",
+      "transport": "demo",
+      "user_id": "demo-student",
+      "chat_id": "demo-chat",
+      "message_id": "13",
+      "sent_at": "2026-11-22T23:59:00+03:00",
+      "text": "Я сегодня покушал",
+      "recorded_at": "2026-11-22T11:43:55+03:00",
+      "trace": {
+        "model": "qwen3:4b",
+        "context": {
+          "text": "Я сегодня покушал",
+          "local_sent_at": "2026-11-22T23:59:00+03:00",
+          "timezone": "Europe/Moscow",
+          "mode": "new_request",
+          "pending": null,
+          "current_plan": {
+            "breakfast": "08:30",
+            "lunch": "13:00",
+            "dinner": "19:30"
+          }
+        },
+        "action": {
+          "action": "record",
+          "day": "today",
+          "meal_time": null,
+          "meal_type": "unknown",
+          "items": [],
+          "multiple": false,
+          "question": null
+        },
+        "eval_count": 49,
+        "total_duration_ns": 371440200
+      }
+    },
+    "src-68130203301d5c7b950c": {
+      "source_id": "src-68130203301d5c7b950c",
+      "transport": "demo",
+      "user_id": "demo-student",
+      "chat_id": "demo-chat",
+      "message_id": "14",
+      "sent_at": "2026-11-23T00:01:00+03:00",
+      "text": "/answer Ел суп",
+      "recorded_at": "2026-11-22T11:43:55+03:00",
+      "trace": {
+        "model": "qwen3:4b",
+        "context": {
+          "text": "Ел суп",
+          "local_sent_at": "2026-11-23T00:01:00+03:00",
+          "timezone": "Europe/Moscow",
+          "mode": "clarification",
+          "pending": {
+            "dialogue_id": "a79fb129c739",
+            "user_id": "demo-student",
+            "draft": {
+              "meal_date": "2026-11-22",
+              "meal_time": null,
+              "meal_type": "unknown",
+              "items": []
+            },
+            "source_refs": [
+              "src-d729c9ecea83b98659ac"
+            ],
+            "started_at": "2026-11-22T23:59:00+03:00"
+          },
+          "current_plan": {
+            "breakfast": "08:30",
+            "lunch": "13:00",
+            "dinner": "19:30"
+          }
+        },
+        "action": {
+          "action": "record",
+          "day": "2026-11-22",
+          "meal_time": null,
+          "meal_type": "unknown",
+          "items": [
+            {
+              "name": "суп",
+              "quantity": null
+            }
+          ],
+          "multiple": false,
+          "question": null
+        },
+        "eval_count": 78,
+        "total_duration_ns": 545578300
+      }
+    },
+    "src-fbd11abb67edb3b6f4fc": {
+      "source_id": "src-fbd11abb67edb3b6f4fc",
+      "transport": "demo",
+      "user_id": "demo-student",
+      "chat_id": "demo-chat",
+      "message_id": "15",
+      "sent_at": "2026-11-23T00:02:00+03:00",
+      "text": "Завтра поем суп",
+      "recorded_at": "2026-11-22T11:43:56+03:00",
+      "trace": {
+        "model": "qwen3:4b",
+        "context": {
+          "text": "Завтра поем суп",
+          "local_sent_at": "2026-11-23T00:02:00+03:00",
+          "timezone": "Europe/Moscow",
+          "mode": "new_request",
+          "pending": null,
+          "current_plan": {
+            "breakfast": "08:30",
+            "lunch": "13:00",
+            "dinner": "19:30"
+          }
+        },
+        "action": {
+          "action": "future",
+          "day": "2026-11-24",
+          "meal_time": null,
+          "meal_type": "unknown",
+          "items": [],
+          "multiple": false,
+          "question": null
+        },
+        "eval_count": 58,
+        "total_duration_ns": 420235500
+      }
+    },
+    "src-76df172ac648c5992b08": {
+      "source_id": "src-76df172ac648c5992b08",
+      "transport": "demo",
+      "user_id": "demo-student",
+      "chat_id": "demo-chat",
+      "message_id": "16",
+      "sent_at": "2026-11-23T00:03:00+03:00",
+      "text": "На днях ел суп",
+      "recorded_at": "2026-11-22T11:43:56+03:00",
+      "trace": {
+        "model": "qwen3:4b",
+        "context": {
+          "text": "На днях ел суп",
+          "local_sent_at": "2026-11-23T00:03:00+03:00",
+          "timezone": "Europe/Moscow",
+          "mode": "new_request",
+          "pending": null,
+          "current_plan": {
+            "breakfast": "08:30",
+            "lunch": "13:00",
+            "dinner": "19:30"
+          }
+        },
+        "action": {
+          "action": "record",
+          "day": null,
+          "meal_time": null,
+          "meal_type": "unknown",
+          "items": [
+            {
+              "name": "суп",
+              "quantity": null
+            }
+          ],
+          "multiple": false,
+          "question": null
+        },
+        "eval_count": 68,
+        "total_duration_ns": 482069400
+      }
+    },
+    "src-ce21ca5559cd1f70b296": {
+      "source_id": "src-ce21ca5559cd1f70b296",
+      "transport": "demo",
+      "user_id": "demo-student",
+      "chat_id": "demo-chat",
+      "message_id": "17",
+      "sent_at": "2026-11-23T00:04:00+03:00",
+      "text": "/new",
+      "recorded_at": "2026-11-22T11:43:57+03:00"
+    },
+    "src-f90499752977c8f74bc3": {
+      "source_id": "src-f90499752977c8f74bc3",
+      "transport": "demo",
+      "user_id": "demo-student",
+      "chat_id": "demo-chat",
+      "message_id": "18",
+      "sent_at": "2026-11-23T00:05:00+03:00",
+      "text": "Перенеси ужин на 20:00",
+      "recorded_at": "2026-11-22T11:43:57+03:00",
+      "trace": {
+        "model": "qwen3:4b",
+        "context": {
+          "text": "Перенеси ужин на 20:00",
+          "local_sent_at": "2026-11-23T00:05:00+03:00",
+          "timezone": "Europe/Moscow",
+          "mode": "new_request",
+          "pending": null,
+          "current_plan": {
+            "breakfast": "08:30",
+            "lunch": "13:00",
+            "dinner": "19:30"
+          }
+        },
+        "action": {
+          "action": "propose",
+          "day": null,
+          "meal_time": "20:00",
+          "meal_type": "dinner",
+          "items": [],
+          "multiple": false,
+          "question": null
+        },
+        "eval_count": 55,
+        "total_duration_ns": 402620500
+      }
+    },
+    "src-58437f33dabd5d223823": {
+      "source_id": "src-58437f33dabd5d223823",
+      "transport": "demo",
+      "user_id": "demo-student",
+      "chat_id": "demo-chat",
+      "message_id": "19",
+      "sent_at": "2026-11-23T00:06:00+03:00",
+      "text": "/cancel 6525adec9331",
+      "recorded_at": "2026-11-22T11:43:57+03:00"
+    },
+    "src-f802cc0a13e13c03c79d": {
+      "source_id": "src-f802cc0a13e13c03c79d",
+      "transport": "demo",
+      "user_id": "demo-student",
+      "chat_id": "demo-chat",
+      "message_id": "20",
+      "sent_at": "2026-11-23T00:07:00+03:00",
+      "text": "/today",
+      "recorded_at": "2026-11-22T11:43:57+03:00"
+    },
+    "src-9daf185554440e520824": {
+      "source_id": "src-9daf185554440e520824",
+      "transport": "console",
+      "user_id": "demo-student",
+      "chat_id": "demo-student",
+      "message_id": "2da0a637ef8e-1",
+      "sent_at": "2026-11-22T11:50:25.146952+03:00",
+      "text": "/plan",
+      "recorded_at": "2026-11-22T11:50:25+03:00"
+    },
+    "src-0440bd143267ad9d4f78": {
+      "source_id": "src-0440bd143267ad9d4f78",
+      "transport": "console",
+      "user_id": "demo-student",
+      "chat_id": "demo-student",
+      "message_id": "2da0a637ef8e-2",
+      "sent_at": "2026-11-22T11:50:25.170504+03:00",
+      "text": "Что я сегодня ел?",
+      "recorded_at": "2026-11-22T11:50:25+03:00",
+      "trace": {
+        "model": "qwen3:4b",
+        "context": {
+          "text": "Что я сегодня ел?",
+          "local_sent_at": "2026-11-22T11:50:25.170504+03:00",
+          "timezone": "Europe/Moscow",
+          "mode": "new_request",
+          "pending": null,
+          "current_plan": {
+            "breakfast": "08:30",
+            "lunch": "13:00",
+            "dinner": "19:30"
+          }
+        },
+        "action": {
+          "action": "diary",
+          "day": "today",
+          "meal_time": null,
+          "meal_type": "unknown",
+          "items": [],
+          "multiple": false,
+          "question": "Что я сегодня ел?"
+        },
+        "eval_count": 56,
+        "total_duration_ns": 2322175600
+      }
+    }
+  },
+  "pending": null,
+  "proposals": {
+    "a178275c8ead": {
+      "proposal_id": "a178275c8ead",
+      "user_id": "demo-student",
+      "meal_type": "dinner",
+      "old_time": "19:00",
+      "new_time": "19:30",
+      "status": "confirmed",
+      "source_refs": [
+        "src-e3ddd915e7cb9fa1220c",
+        "src-072f9f40af4631e6290b"
+      ]
+    },
+    "6525adec9331": {
+      "proposal_id": "6525adec9331",
+      "user_id": "demo-student",
+      "meal_type": "dinner",
+      "old_time": "19:30",
+      "new_time": "20:00",
+      "status": "cancelled",
+      "source_refs": [
+        "src-f90499752977c8f74bc3",
+        "src-58437f33dabd5d223823"
+      ]
+    }
+  },
+  "receipts": {
+    "demo:demo-chat:1": {
+      "source_id": "src-3aa569cd04b95f59ccca",
+      "reply": "Записал: 2026-11-21, 08:30, завтрак: овсянка (200 г), банан (количество неизвестно)."
+    },
+    "demo:demo-chat:2": {
+      "source_id": "src-b88a4e72e20f431e3811",
+      "reply": "Записал: 2026-11-21, 13:00, обед: суп (количество неизвестно), хлеб (количество неизвестно)."
+    },
+    "demo:demo-chat:3": {
+      "source_id": "src-f4590caffe89276fa9a9",
+      "reply": "Записал: 2026-11-21, 19:00, ужин: рис (количество неизвестно), курица (количество неизвестно)."
+    },
+    "demo:demo-chat:4": {
+      "source_id": "src-127539ec73b2020c7fac",
+      "reply": "Записал: 2026-11-22, 08:30, завтрак: творог (150 г), яблоко (количество неизвестно)."
+    },
+    "demo:demo-chat:5": {
+      "source_id": "src-daf5c2889d164a7b24f4",
+      "reply": "Записал: 2026-11-22, 13:00, обед: гречку (количество неизвестно), рыбу (количество неизвестно)."
+    },
+    "demo:demo-chat:6": {
+      "source_id": "src-6c04710cf6e2298b0542",
+      "reply": "Дневник за 2026-11-22:\n• 2026-11-22, 08:30, завтрак: творог (150 г), яблоко (количество неизвестно)\n• 2026-11-22, 13:00, обед: гречку (количество неизвестно), рыбу (количество неизвестно)\nДругих записей за этот день нет."
+    },
+    "demo:demo-chat:7": {
+      "source_id": "src-8454a3c136830bf77696",
+      "reply": "Дневник за 2026-11-21:\n• 2026-11-21, 08:30, завтрак: овсянка (200 г), банан (количество неизвестно)\n• 2026-11-21, 13:00, обед: суп (количество неизвестно), хлеб (количество неизвестно)\n• 2026-11-21, 19:00, ужин: рис (количество неизвестно), курица (количество неизвестно)\nДругих записей за этот день нет."
+    },
+    "demo:demo-chat:8": {
+      "source_id": "src-1eeaec6a8aa257dbeee7",
+      "reply": "Действующий график:\n• Завтрак: 08:30\n• Обед: 13:00\n• Ужин: 19:00"
+    },
+    "demo:demo-chat:9": {
+      "source_id": "src-e3ddd915e7cb9fa1220c",
+      "reply": "Предложение a178275c8ead: ужин с 19:00 на 19:30.\nГрафик пока прежний.\nПодтвердить: /confirm a178275c8ead\nОтменить: /cancel a178275c8ead"
+    },
+    "demo:demo-chat:10": {
+      "source_id": "src-313d48142ed1a4455517",
+      "reply": "Действующий график:\n• Завтрак: 08:30\n• Обед: 13:00\n• Ужин: 19:00"
+    },
+    "demo:demo-chat:11": {
+      "source_id": "src-072f9f40af4631e6290b",
+      "reply": "Изменение подтверждено.\nДействующий график:\n• Завтрак: 08:30\n• Обед: 13:00\n• Ужин: 19:30"
+    },
+    "demo:demo-chat:12": {
+      "source_id": "src-8c6d7de3d9dd3935a2dd",
+      "reply": "Это предложение уже закрыто и не может быть применено повторно."
+    },
+    "demo:demo-chat:13": {
+      "source_id": "src-d729c9ecea83b98659ac",
+      "reply": "Уточните, какие блюда или продукты были съедены. Используйте /answer текст. Пока факт не создан."
+    },
+    "demo:demo-chat:14": {
+      "source_id": "src-68130203301d5c7b950c",
+      "reply": "Записал: 2026-11-22, время неизвестно, тип не указан: суп (количество неизвестно)."
+    },
+    "demo:demo-chat:15": {
+      "source_id": "src-fbd11abb67edb3b6f4fc",
+      "reply": "Это намерение на будущее. Фактический приём пищи не создан."
+    },
+    "demo:demo-chat:16": {
+      "source_id": "src-76df172ac648c5992b08",
+      "reply": "Уточните, за какой день была еда. Используйте /answer текст. Пока факт не создан."
+    },
+    "demo:demo-chat:17": {
+      "source_id": "src-ce21ca5559cd1f70b296",
+      "reply": "Незавершённое уточнение закрыто. Отправьте новую запись с днём и блюдами."
+    },
+    "demo:demo-chat:18": {
+      "source_id": "src-f90499752977c8f74bc3",
+      "reply": "Предложение 6525adec9331: ужин с 19:30 на 20:00.\nГрафик пока прежний.\nПодтвердить: /confirm 6525adec9331\nОтменить: /cancel 6525adec9331"
+    },
+    "demo:demo-chat:19": {
+      "source_id": "src-58437f33dabd5d223823",
+      "reply": "Предложение отменено. График не изменён."
+    },
+    "demo:demo-chat:20": {
+      "source_id": "src-f802cc0a13e13c03c79d",
+      "reply": "В дневнике за 2026-11-23 записей нет. Это не означает, что вы не ели."
+    },
+    "console:demo-student:2da0a637ef8e-1": {
+      "source_id": "src-9daf185554440e520824",
+      "reply": "Действующий график:\n• Завтрак: 08:30\n• Обед: 13:00\n• Ужин: 19:30"
+    },
+    "console:demo-student:2da0a637ef8e-2": {
+      "source_id": "src-0440bd143267ad9d4f78",
+      "reply": "Дневник за 2026-11-22:\n• 2026-11-22, 08:30, завтрак: творог (150 г), яблоко (количество неизвестно)\n• 2026-11-22, 13:00, обед: гречку (количество неизвестно), рыбу (количество неизвестно)\n• 2026-11-22, время неизвестно, тип не указан: суп (количество неизвестно)\nДругих записей за этот день нет."
+    }
+  },
+  "telegram_offset": 0
+}

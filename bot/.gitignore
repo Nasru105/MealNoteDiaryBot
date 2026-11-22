@@ -1,0 +1,10 @@
+.env
+.env.*
+!.env.example
+.venv/
+__pycache__/
+*.pyc
+vault/
+**/.agent/process.lock
+**/.obsidian/workspace*.json
+work/
